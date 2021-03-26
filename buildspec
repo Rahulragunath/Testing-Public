@@ -2,5 +2,3 @@ yum update -y
 yum install httpd -y
 cd /var/www/html/
 echo This is my first jenkins test page > index.html
-zip index.26Marhch2021.zip index.html
-aws s3 cp index.26March2021.zip s3://rahul-lambda/
