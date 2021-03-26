@@ -9,7 +9,7 @@ phases:
       - yum install -y httpd
       - cd /var/www/html/
       - echo Hi This file is created by Rahul > index.html
-      - zip index-4March2021.zip index.html
+      - zip index-26March2021.zip index.html
 artifacts:
   files:
-    - /var/www/html/index-4March2021.zip
+    - /var/www/html/index-26March2021.zip
