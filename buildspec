@@ -1,4 +1,15 @@
-yum update -y
-yum install httpd -y
-cd /var/www/html/
-echo Hi !This is my first jenkins test page > index.html
+version: 0.2  
+
+phases:
+  install:
+    run-as: root
+    commands:
+      - echo "Installing apache"
+      - yum update -y
+      - yum install -y httpd
+      - cd /var/www/html/
+      - echo Hi This file is created by Rahul > index.html
+      - zip index-4March2021.zip index.html
+artifacts:
+  files:
+    - /var/www/html/index-4March2021.zip
